@@ -44,7 +44,7 @@ typedef void(^MTKBlockNotify)       (__weak id self, NSNotification *notificatio
 
 #pragma mark Ownership
 /// Object that 'owns' all blocks in this observer. This object was the caller of observation method.
-@property (nonatomic, readonly, assign) id owner;
+@property (nonatomic, readonly, weak) id owner;
 
 
 #pragma mark Attaching
